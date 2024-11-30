@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/CUIYAC_Favicon.png">
+    <title>Programs</title>
+</head>
+
+<body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <header>
+        <div class="header-content">
+            <img src="images/CUIYAC_Vertical_Logo.png" alt="CUIYAC Logo">
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="program.html">Program</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact_us.html" class="cta-button">Contact US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <section class="pro-hero-image">
+            <h1>Our Programs</h1>
+        </section>
+
+        <section class="our_programs">
+            <div class="text_box"></div>
+                <h2>Our Programs</h2>
+                <p>The First-Generation Student Program is grounded in a history of student activism. First-Generation
+                    College Students @UM, a student organization</p>
+            </div>
+            <div class="Program_flex_box landscape">
+                <div class="program_card new_style">
+                    <div>
+                        <img src="images/program_01.jpg" alt="panda summer camp">
+                    </div>
+                    <div class="program_card_text">
+                        <h3>Panda Summer Camp in Chengdu</h3>
+                        <p>Join our Chinese Summer Camp in Beijing for an unforgettable two-week adventure where rich
+                            history meets vibrant culture. Immerse yourself in Mandarin, explore iconic landmarks like
+                            the Great Wall and the Temple of Heaven, and make friends from around the world.</p>
+                        <a href="https://firstgen.umich.edu/events/" class="cta-button">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="program_card new_style">
+                    <div>
+                        <img src="images/Program-2.jpg" alt="silkroad summer camp">
+                    </div>
+                    <div class="program_card_text">
+                        <h3>Sickroad Camp in Gansu</h3>
+                        <p>Join our Chinese Summer Camp in Beijing for an unforgettable two-week adventure where rich
+                            history meets vibrant culture. Immerse yourself in Mandarin, explore iconic landmarks like
+                            the Great Wall and the Temple of Heaven, and make friends from around the world.</p>
+                        <a href="https://firstgen.umich.edu/events/" class="cta-button">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="program_card new_style">
+                    <div>
+                        <img src="images/program-03.jpg" alt="ancient china summer camp">
+                    </div>
+                    <div class="program_card_text">
+                        <h3>Ancient China Summer Camp in Xi,an</h3>
+                        <p>Join our Chinese Summer Camp in Beijing for an unforgettable two-week adventure where rich
+                            history meets vibrant culture. Immerse yourself in Mandarin, explore iconic landmarks like
+                            the Great Wall and the Temple of Heaven, and make friends from around the world.</p>
+                        <a href="https://firstgen.umich.edu/events/" class="cta-button">Learn More</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer-flex">
+        <div class="footer-logo">
+            <img src="images/CUIYAC_Vertical_Logo.png" alt="UMSI Logo" width="150">
+        </div>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-info">
+            <p>© Copyrights <span id="year"></span> by CUIYAC. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script>
+        function toggleMenu() {
+            const hamburger = document.querySelector('.hamburger-menu');
+            const nav = document.querySelector('.nav-menu');
+
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+
+        // Close menu when clicking outside (optional)
+        document.addEventListener('click', (e) => {
+            const nav = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger-menu');
+
+            if (!nav.contains(e.target) && !hamburger.contains(e.target) && nav.classList.contains('active')) {
+                nav.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+
+</html>

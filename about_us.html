@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/CUIYAC_Favicon.png">
+    <title>About Us</title>
+</head>
+
+<body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <header>
+        <div class="header-content">
+            <img src="images/CUIYAC_Vertical_Logo.png" alt="CUIYAC Logo">
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li class="active"><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact_us.html" class="cta-button">Contact US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <section class="pro-hero-image about_us">
+            <h1>About Us</h1>
+        </section>
+
+        <section class="key_feature">
+            <div class="key_feature_text">
+                <h2>Who We Are</h2>
+                <p>Summer Camp China Program is a wonderfully immersive experience for kids & teens. It’s the best way
+                    to spend the summer – exploring the Chinese culture, visiting famous tourist Chinese sites, and
+                    learning Mandarin Chinese together with children from all over the world.</p>
+                <p>Students will get a chance to experience traditional Chinese culture through various cultural
+                    activities such as Chinese calligraphy, tea ceremony, cooking classes, paper-cutting, making shadow
+                    puppets, and many more.</p>
+                <p>Our Summer Camp China Program has a variety of choices including Half-day Camp, Day Camp, Full Camp
+                    and Homestay Camp to meet your individual requirements.</p>
+                </p>
+            </div>
+            <div>
+                <img src="images/about_us-2.jpg" alt="summer camps in Beijing">
+            </div>
+        </section>
+    </main>
+    <footer class="footer-flex">
+        <div class="footer-logo">
+            <img src="images/CUIYAC_Vertical_Logo.png" alt="UMSI Logo" width="150">
+        </div>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-info">
+            <p>© Copyrights <span id="year"></span> by CUIYAC. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
