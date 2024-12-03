@@ -213,7 +213,7 @@ section {
 }
 
 .home-hero-image {
-    background-image: linear-gradient(rgba(46, 45, 45, 0.375), rgba(39, 38, 38, 0.271)), url("images/Hero_image.jpg");
+    background-image: linear-gradient(rgba(46, 45, 45, 0.375), rgba(39, 38, 38, 0.271)), url("/images/Hero_image.jpg");
     height: 300px;
     width: 100%;
     background-position: center;
@@ -223,7 +223,7 @@ section {
 }
 
 .pro-hero-image {
-    background-image: linear-gradient(rgba(46, 45, 45, 0.375), rgba(39, 38, 38, 0.271)), url("images/program_hero_image.jpeg");
+    background-image: linear-gradient(rgba(46, 45, 45, 0.375), rgba(39, 38, 38, 0.271)), url("/images/program_hero_image.jpeg");
     height: 300px;
     width: 100%;
     background-position: center;
@@ -233,7 +233,7 @@ section {
 }
 
 .about_us{
-    background-image: linear-gradient(rgba(46, 45, 45, 0.375), rgba(39, 38, 38, 0.271)), url("images/about_us.jpg");
+    background-image: linear-gradient(rgba(46, 45, 45, 0.375), rgba(39, 38, 38, 0.271)), url("/images/about_us.jpg");
 
 }
 .pro-hero-image h1 {
