@@ -408,6 +408,11 @@ textarea {
     padding: 16px;
     text-align: center;
 }
+
+.office_image img{
+    border-radius: 12px;
+}
+
 /* footer style */
 .footer-flex {
     background-color: #91288D;
