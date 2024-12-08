@@ -509,7 +509,10 @@ footer a:hover {
         display: none !important;
         /* Never show overlay on desktop */
     }
-
+    footer a:hover {
+        text-decoration: underline;
+        color:white;
+    }
 
     .provide_flex_box {
         display: flex;
